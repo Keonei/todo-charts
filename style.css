@@ -1,0 +1,145 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+h1 {
+ font-family: 'Niconne', cursive;
+ font-size: 2.8em;
+ letter-spacing: .03em;
+ border-bottom: solid .03em grey;
+ padding-bottom: .5em;
+}
+
+#container {
+  background-color: black;
+  background-image: url(images/dragon.jpg);
+  background-attachment: fixed;
+  background-size: inherit;
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 100vw;
+}
+
+@media screen and (max-width: 1135px) {
+  #container {
+    background-color: black;
+    background-image: none;
+  }
+}
+
+main {
+  background-color: silver;
+  display: flex;
+  text-align: center;
+  flex-flow: column wrap;
+  max-width: 66%;
+}
+
+form {
+  text-align: left;
+  width: 86%;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.h2-class {
+  margin: 2em 0 0 0;
+}
+
+#difficulty {
+  height: 2em;
+  width: 12em;
+  margin-left: .850em;
+}
+
+.member-name {
+  text-align: left;
+  color: white;
+  background-color: #434447;
+  padding: 1em 2em;
+  margin: 2em 0 0 0;
+}
+
+.member-name:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.member-name h2 {
+  letter-spacing: .03em;
+}
+
+.member-name input {
+  font-size: 1em;
+  float: left;
+  width: 75%;
+  padding: .750em;
+  border: none;
+}
+
+input[type="radio"] {
+  margin-left: .5em;
+  margin-right: 1em;
+}
+
+label[for="cleric"] {
+  margin-right: 1.6em;
+}
+
+label[for="paladin"] {
+  margin-right: 1.6em;
+}
+
+label[for="rogue"] {
+  margin-right: 1.6em;
+}
+
+label[for="ranger"] {
+  margin-right: 1.6em;
+}
+
+label[for="fighter"] {
+  margin-right: 1.6em;
+}
+
+label[for="wizard"] {
+  margin-right: 1.6em;
+}
+
+#addBtn {
+  font-size: 1em;
+  text-align: center;
+  width: 25%;
+  color: #555;
+  float: left;
+  background: #d9d9d9;
+  padding: .750em;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#addBtn:hover {
+  background-color: #bbb;
+}
+
+#team-list {
+  font-size: 1.2em;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}

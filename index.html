@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TODO App</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <main>
+        <h1>Who's Meeting you in the Tavern...</h1>
+        <form>
+          <label for="difficulty">Select Difficulty:
+            <select id="difficulty">
+              <option value="Peasant">Peasant</option>
+              <option value="Standard">Standard</option>
+              <option value="to bring it">Bring It!</option>
+              <option value="HEAL ME!">Heal ME!</option>
+              <option value="TPK">TPK</option>
+            </select>
+          </label>
+          <p><span class="h2-class">Class</span></p>
+          <label for="cleric">
+            <input type="radio" name="memberClass" value="Cleric">Cleric
+          </label>
+          <label for="paladin">
+            <input type="radio" name="memberClass" value="Paladin">Paladin
+          </label>
+          <label for="rogue">
+            <input type="radio" name="memberClass" value="Rogue">Rogue
+          </label>
+          <label for="ranger">
+            <input type="radio" name="memberClass" value="Ranger">Ranger
+          </label>
+          <label for="fighter">
+            <input type="radio" name="memberClass" value="Fighter">Fighter
+          </label>
+          <label for="wizard">
+            <input type="radio" name="memberClass" value="Wizard">Wizard
+          </label>
+            <div class="member-name">
+              <h2>Who is this in your Fellowship:</h2>
+              <label>
+                <input type="text" id="teamMember" name="teamMember" placeholder="Name" value="">
+              </label>
+            <input type="submit" id="addBtn">
+          </div>
+        </form>
+        <div id="team-list"></div>
+      </main>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
