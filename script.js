@@ -1,5 +1,37 @@
 console.log("Epic Adventure Time!");
 
+// chart
+
+// Load the Visualization API and the corechart package.
+google.charts.load('current', {'packages': ['corechart']});
+// Set a callback to run when the Google Visualization API is loaded.
+google.charts.setOnLoadCallback(drawMultSeries);
+
+function drawMultSeries() {
+      var data = google.visualization.arrayToDataTable([
+        ['Paladin' taskList.members],
+        ['Cleric' taskList.members],
+        ['Ranger' taskList.members],
+        ['Rogue,' taskList.members],
+        ['Fighter' taskList.members],
+        ['Wizard' taskList.members]
+      ]);
+
+      var options = {
+        title: 'What classes are already in play',
+        hAxis: {
+          title: 'Classes',
+        },
+        vAxis: {
+          title: 'How Many of you'
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+
+
 // create an object array for our selections
 var taskList = {
   members: [

@@ -143,3 +143,12 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+#chart-div h2 {
+  font-size: 1em;
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 1em;
+
+}
