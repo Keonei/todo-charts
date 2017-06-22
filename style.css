@@ -14,7 +14,7 @@ h1 {
  font-family: 'Niconne', cursive;
  font-size: 2.8em;
  letter-spacing: .03em;
- border-bottom: solid .03em grey;
+ border-bottom: solid .05em goldenrod;
  padding-bottom: .5em;
 }
 
@@ -134,6 +134,7 @@ label[for="wizard"] {
 
 #team-list {
   font-size: 1.2em;
+  text-align: justify;
   width: 60%;
   margin: 0 auto;
   padding-bottom: 1em;
@@ -144,11 +145,14 @@ ul {
   padding: 0;
 }
 
-#chart-div h2 {
+.chart {
+  width: 86%;
+  margin: 0 auto;
+  padding: 1em;
+  border-top: solid .03em grey;
+}
+
+section h2 {
   font-size: 1em;
   text-align: left;
-  width: 60%;
-  margin: 0 auto;
-  padding-bottom: 1em;
-
 }
