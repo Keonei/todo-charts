@@ -12,7 +12,7 @@
     <div id="container">
       <main>
         <h1>Who's Meeting you in the Tavern...</h1>
-        <form>
+        <form name="letsPlay">
           <label for="difficulty">Select Difficulty:
             <select id="difficulty">
               <option value="Peasant">Peasant</option>
@@ -24,29 +24,29 @@
           </label>
           <p><span class="h2-class">Class</span></p>
           <label for="cleric">
-            <input type="radio" name="memberClass" value="Cleric">Cleric
+            <input type="radio" id="cleric" name="memberClass" value="Cleric">Cleric
           </label>
           <label for="paladin">
-            <input type="radio" name="memberClass" value="Paladin">Paladin
+            <input type="radio" id="paladin" name="memberClass" value="Paladin">Paladin
           </label>
           <label for="rogue">
-            <input type="radio" name="memberClass" value="Rogue">Rogue
+            <input type="radio" id="rogue" name="memberClass" value="Rogue">Rogue
           </label>
           <label for="ranger">
-            <input type="radio" name="memberClass" value="Ranger">Ranger
+            <input type="radio" id="ranger" name="memberClass" value="Ranger">Ranger
           </label>
           <label for="fighter">
-            <input type="radio" name="memberClass" value="Fighter">Fighter
+            <input type="radio" id="fighter" name="memberClass" value="Fighter">Fighter
           </label>
           <label for="wizard">
-            <input type="radio" name="memberClass" value="Wizard">Wizard
+            <input type="radio" id="wizard" name="memberClass" value="Wizard">Wizard
           </label>
             <div class="member-name">
               <h2>Who is this in your Fellowship:</h2>
               <label>
                 <input type="text" id="teamMember" name="teamMember" placeholder="Name" value="">
               </label>
-            <input type="submit" id="addBtn">
+            <input type="submit" id="addBtn" value="Submit">
           </div>
         </form>
         <div id="team-list"></div>

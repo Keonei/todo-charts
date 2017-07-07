@@ -96,11 +96,14 @@ window.onload = function() {
         buildChart(tasks);
       }
 
+  document.forms["letsPlay"].onsubmit = addList;
   function addList () {
     event.preventDefault();
     // locate form section and find our values
     // lets use querySelector since there is only one form
-    var form = document.querySelector("form");
+    var form = document.forms["letsPlay"];
+    var selection = form["memberClass"].value;
+    console.log(selection);
     // our task in this case is player selection for our team, input our values
     var taskMember = form.teamMember.value + "\xa0has chosen to be the\xa0" + form.memberClass.value + "\xa0for your party and has requested difficulty\xa0" + document.getElementById("difficulty").value;
     // push selection to our array
@@ -109,7 +112,4 @@ window.onload = function() {
 
     form.reset();
   }
-
-    var form = document.querySelector("form")
-    form.onsubmit = addList;
 }
